@@ -1,0 +1,87 @@
+:root {
+  --app-white-color: #fafafa;
+  --app-dark-color: #202c37;
+  --app-lighter-dark-color: #2b3945;
+  --black-color: #000;
+
+  /* General styles */
+  --radius: 0.3125rem;
+  --max-width: 1250px;
+  --app-font-family: 'Nunito Sans', sans-serif;
+  --transition: all 0.3s ease;
+  --box-shadow: 1px 1px 11px -3px rgba(0, 0, 0, 0.75);
+}
+
+html {
+  font-size: 100%;
+}
+
+/* Break points for the app
+
+    mobile:375px
+    tablet:767px
+    pc : 1200px
+*/
+
+body {
+  font-family: var(--app-font-family);
+  position: relative;
+  background-color: var(--app-white-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h4,
+h3,
+h5 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+/* General section class */
+
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.section-below-nav {
+  padding-top: 0.75rem;
+  min-height: calc(100vh - 5vh);
+}
+
+.padding {
+  padding: 1.25rem;
+}
+
+/* App theme classes */
+
+.dark-mode {
+  background-color: var(--app-dark-color);
+  color: var(--app-white-color);
+}
+
+.dark-mode-lighter {
+  background-color: var(--app-lighter-dark-color);
+  color: var(--app-white-color);
+}
+
+.light-mode {
+  background-color: var(--app-white-color);
+  color: var(--black-color);
+}
+
+/* images */
+.img {
+  height: 100%;
+  width: 100%;
+}
